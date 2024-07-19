@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className='w-full h-20 bg-[#121a25] flex justify-between items-center sticky top-0 z-10'>
+    <div className='w-full h-20 bg-[#18212ffd] flex justify-between items-center sticky top-0 z-10 shadow-lg'>
       <div className='flex items-center gap-7 pl-10'>
         <img src={tradingLogo} alt="Logo" className='w-8 h-8' />
         <h2 className='text-white text-2xl'>Trading Automation</h2>
@@ -49,7 +49,7 @@ const Navbar = () => {
             <Link onClick={toggleMenu} to="help" spy={true} offset={-100} duration={500} smooth={true}>
               <li className='hover:text-[#7db6f6]'>Help</li>
             </Link>
-            <Link onClick={toggleMenu} to="contact" spy={true} offset={-100} duration={500} smooth={true}>
+            <Link onClick={toggleMenu} to="contact" spy={true} offset={0} duration={500} smooth={true}>
               <li className='hover:text-[#7db6f6]'>Contact</li>
             </Link>
           </ul>
