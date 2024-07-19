@@ -21,13 +21,13 @@ const Navbar = () => {
           <Link to="home" spy={true} offset={-100} duration={500} smooth={true}>
             <li className='hover:text-[#7db6f6]'>Home</li>
           </Link>
-          <Link to="product" spy={true} offset={0} duration={500} smooth={true}>
+          <Link to="product" spy={true} offset={-100} duration={500} smooth={true}>
             <li className='hover:text-[#7db6f6]'>Product</li>
           </Link>
-          <Link to="help" spy={true} offset={0} duration={500} smooth={true}>
+          <Link to="help" spy={true} offset={-100} duration={500} smooth={true}>
             <li className='hover:text-[#7db6f6]'>Help</li>
           </Link>
-          <Link to="contact" spy={true} offset={0} duration={500} smooth={true}>
+          <Link to="contact" spy={true} offset={-7} duration={500} smooth={true}>
             <li className='hover:text-[#7db6f6]'>Contact</li>
           </Link>
         </ul>
@@ -43,13 +43,13 @@ const Navbar = () => {
             <Link onClick={toggleMenu} to="home" spy={true} offset={-100} duration={500} smooth={true}>
               <li className='hover:text-[#7db6f6]'>Home</li>
             </Link>
-            <Link onClick={toggleMenu} to="product" spy={true} offset={0} duration={500} smooth={true}>
+            <Link onClick={toggleMenu} to="product" spy={true} offset={-100} duration={500} smooth={true}>
               <li className='hover:text-[#7db6f6]'>Product</li>
             </Link>
-            <Link onClick={toggleMenu} to="help" spy={true} offset={0} duration={500} smooth={true}>
+            <Link onClick={toggleMenu} to="help" spy={true} offset={-100} duration={500} smooth={true}>
               <li className='hover:text-[#7db6f6]'>Help</li>
             </Link>
-            <Link onClick={toggleMenu} to="contact" spy={true} offset={0} duration={500} smooth={true}>
+            <Link onClick={toggleMenu} to="contact" spy={true} offset={-100} duration={500} smooth={true}>
               <li className='hover:text-[#7db6f6]'>Contact</li>
             </Link>
           </ul>

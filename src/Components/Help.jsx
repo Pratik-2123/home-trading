@@ -17,61 +17,57 @@ import { GiServerRack } from "react-icons/gi";
 
 function Help() {
     return (
-        <div id="help" className="h-[85vh] bg-[#121a25] flex flex-col">
-            <h1 className="text-3xl text-center text-[#e9e9e9]">Help</h1>
-            <div className="text-[#e9e9e9] my-10 flex w-[100%] justify-center">
+        <div id="help" className="h-fit bg-[#121a25] flex flex-col mt-20">
+            <h2 className="mb-4 text-4xl tracking-tight font-bold text-center text-gray-900 dark:text-white">Help</h2>
+            <div className="text-[#e9e9e9] my-10 flex w-full justify-center px-4 lg:px-0">
                 <Accordion
                     type="single"
                     collapsible
-                    className=" w-[90%] p-8 border-none"
+                    className="w-full lg:w-[90%] p-4 lg:p-8 border-none"
                     defaultValue="item-1"
                 >
-                    <AccordionItem value="item-1" className=" mb-8 mt-8">
+                    <AccordionItem value="item-1" className="mb-4 lg:mb-8 mt-4 lg:mt-8">
                         <AccordionTrigger className="text-xl flex justify-between">
                             <div className="flex align-middle gap-4 justify-center">
-                                <AiOutlineQuestionCircle size={30} />
+                                <AiOutlineQuestionCircle size={30} className="hidden md:block lg:hidden" />
                                 <p className="text-[#e9e9e9]">Can we place trade in multiple accout at once?</p>
                             </div>
                         </AccordionTrigger>
                         <AccordionContent className="text-base">
-                            Yes our primary service empowers users to execute orders across multiple accounts at single click.
+                            Yes, our primary service empowers users to execute orders across multiple accounts with a single click.
                         </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-2" className=" mb-8">
+                    <AccordionItem value="item-2" className="mb-4 lg:mb-8">
                         <AccordionTrigger className="text-xl">
                             <div className="flex align-middle gap-4 justify-center">
-                                {/* <MdOutlineScreenshotMonitor size={30} /> */}
-                                <AiOutlineQuestionCircle size={30} />
+                                <AiOutlineQuestionCircle size={30} className="hidden md:block lg:hidden" />
                                 <p className="text-[#e9e9e9]">Is there any delay in placing the order at the moment?</p>
                             </div>
                         </AccordionTrigger>
                         <AccordionContent className="text-base">
                             The execution does not necessarily delay within the app but depends on your internet connection.
-                            components&apos; aesthetic.
                         </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-3" className=" mb-8">
+                    <AccordionItem value="item-3" className="mb-4 lg:mb-8">
                         <AccordionTrigger className="text-xl">
                             <div className="flex align-middle gap-4 justify-center">
-                                <AiOutlineQuestionCircle size={30} />
+                                <AiOutlineQuestionCircle size={30} className="hidden md:block lg:hidden" />
                                 <p className="text-[#e9e9e9]">Is the service suitable for normal users who trade in stock market?</p>
                             </div>
                         </AccordionTrigger>
                         <AccordionContent className="text-base">
                             This service is designed not for individual stock traders but for professionals managing trading on behalf of clients across multiple accounts. It caters specifically to those who handle multiple client accounts and require efficient management capabilities.
-                            prefer.
                         </AccordionContent>
                     </AccordionItem>
-                    <AccordionItem value="item-4" className=" mb-8">
+                    <AccordionItem value="item-4" className="mb-4 lg:mb-8">
                         <AccordionTrigger className="text-xl">
                             <div className="flex align-middle gap-4 justify-center">
-                            <AiOutlineQuestionCircle size={30}/>
+                                <AiOutlineQuestionCircle size={30} className="hidden md:block lg:hidden" />
                                 <p className="text-[#e9e9e9]">Is the service paid?</p>
                             </div>
                         </AccordionTrigger>
                         <AccordionContent className="text-base">
-                            Yes, It does charge a minimal amount for the security reasons.
-                            prefer.
+                            Yes, it does charge a minimal amount for security reasons.
                         </AccordionContent>
                     </AccordionItem>
                 </Accordion>
