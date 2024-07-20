@@ -11,7 +11,7 @@ const Product = () => {
         </div>
         <div className='max-w-full lg:max-w-[40%] mt-10 lg:mt-0 px-6 lg:px-0 lg:mr-36'>
           <h1 className='text-[#e9e9e9] text-3xl'>What we Provide?</h1>
-          <p className='text-[#cdcdcd] mt-10 text-lg tracking-widest'>Our company offers a streamlined solution for managing multiple demat accounts effortlessly from a single platform. We simplify the process of buying or selling stocks by enabling users to execute trades across all linked accounts simultaneously with just one click. This eliminates the need to log in to each account individually, enhancing efficiency and convenience. Now, managing your investments is easier than ever, ensuring seamless transactions and centralized control over your trading activities.</p>
+          <p className='text-[#b3afaf] mt-10 text-lg tracking-widest'>Our company offers a streamlined solution for managing multiple demat accounts effortlessly from a single platform. We simplify the process of buying or selling stocks by enabling users to execute trades across all linked accounts simultaneously with just one click. This eliminates the need to log in to each account individually, enhancing efficiency and convenience. Now, managing your investments is easier than ever, ensuring seamless transactions and centralized control over your trading activities.</p>
         </div>
       </div>
     </div>
