@@ -7,7 +7,7 @@ const Home = () => {
             <div className='flex w-full justify-between items-center flex-col lg:flex-row'>
                 <div className='lg:ml-16 mt-10 lg:mt-20 lg:max-w-[40%] px-6 lg:px-0'>
                     <h1 className='text-[#e9e9e9] text-2xl lg:text-4xl font-bold'>Tired of making trades in individual accounts?</h1>
-                    <p className='text-[#8d8a8a] mt-5 text-lg tracking-widest'>Automate your trades with Trading Automation and manage your trading business with ease...</p>
+                    <p className='text-[#b3afaf] mt-5 text-lg tracking-widest'>Automate your trades with Trading Automation and manage your trading business with ease...</p>
                     <p className='text-[#b3afaf] mt-10 text-lg tracking-widest'>In our Trading Automation platform, users can link multiple demat accounts to a single interface. This allows them to manage and execute trades seamlessly across all selected accounts. With just one click, users can buy or sell orders, ensuring that the transaction is applied uniformly across all their linked accounts. This feature streamlines the trading process, providing efficiency and convenience for managing multiple portfolios.</p>
                 </div>
                 <div className='lg:mr-36 mt-10 lg:mt-20 flex flex-col items-center px-6 lg:px-0'>
