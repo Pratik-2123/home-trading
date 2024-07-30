@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import tradingLogo from '../assets/increase.png'; // Update the path to your logo
@@ -8,11 +8,35 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { loginWithRedirect } = useAuth0();
   const { logout } = useAuth0();
-  const { user, isAuthenticated, isLoading } = useAuth0();
+  const { user, isAuthenticated, isLoading, getAccessTokenSilently } = useAuth0();
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+
+  useEffect(() => {
+    const saveUser = async () => {
+      if (isAuthenticated) {
+        try {
+          const token = await getAccessTokenSilently();
+          const response = await fetch('http://localhost:5000/save_user', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${token}`
+            },
+            body: JSON.stringify(user)
+          });
+          const data = await response.json();
+          console.log(data);
+        } catch (error) {
+          console.error("Error saving user data:", error);
+        }
+      }
+    };
+
+    saveUser();
+  }, [isAuthenticated, getAccessTokenSilently, user]);
 
   return (
     <div className='w-full h-20 bg-[#18212ffd] flex justify-between items-center sticky top-0 z-10 shadow-lg'>
